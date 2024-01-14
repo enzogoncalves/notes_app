@@ -21,9 +21,3 @@ class NotesOpenNoteState extends NotesState {
 
   Note note;
 }
-
-class NotesSearchState extends NotesState {
-  NotesSearchState({this.queryTitle = ""});
-
-  String queryTitle;
-}

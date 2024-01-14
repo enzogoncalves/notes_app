@@ -29,9 +29,3 @@ class NotesEditEvent extends NotesEvent {
 
   Note note;
 }
-
-class NotesSearchEvent extends NotesEvent {
-  NotesSearchEvent({this.queryTitle = ""});
-
-  String queryTitle;
-}

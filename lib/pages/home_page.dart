@@ -28,18 +28,6 @@ class _NotesPageState extends State<NotesPage> {
             "Notes",
           ),
           backgroundColor: appColors.backgroundColor,
-          actions: [
-            Container(
-              margin: const EdgeInsets.only(right: 10),
-              child: IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.search,
-                ),
-                style: IconButton.styleFrom(backgroundColor: appColors.appBarIconBackgroundColor, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8))),
-              ),
-            )
-          ],
         ),
         backgroundColor: appColors.backgroundColor,
         body: Container(
@@ -137,8 +125,6 @@ class _NotesPageState extends State<NotesPage> {
                         ],
                       );
                     }
-                  } else if (state is NotesSearchState) {
-                    return const Text("data");
                   } else {
                     return const Text("Error...");
                   }
